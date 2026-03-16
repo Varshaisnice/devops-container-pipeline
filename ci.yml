@@ -1,0 +1,8 @@
+      - name: Create Artifact
+        run: zip -r build-package.zip .
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-package
+          path: build-package.zip
